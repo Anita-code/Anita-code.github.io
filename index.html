@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Météo-App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+            <h1>Ma Météo</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Entrez une ville...">
+                <button id="search-btn">Rechercher</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="current-weather">
+                <div class="location" id="location">Chargement...</div>
+                <div class="date" id="date"></div>
+                <div class="weather-icon">
+                    <img id="weather-icon" src="" alt="Icône météo">
+                </div>
+                <div class="temperature" id="temperature">--°C</div>
+                <div class="description" id="description"></div>
+                <div class="details">
+                    <div class="detail-item">
+                        <span>Humidité</span>
+                        <span id="humidity">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Vent</span>
+                        <span id="wind">-- km/h</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast" id="forecast">
+                <!-- Les prévisions sur 5 jours seront ajoutées ici par JavaScript -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
